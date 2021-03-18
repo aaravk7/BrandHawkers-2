@@ -5,6 +5,23 @@
 
 body {
   font-family: "Karla", sans-serif;
+  color: #4f4f51;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(186, 21, 21, 0.771);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #c42329;
+}
+
+body::-webkit-scrollbar-button {
+  background-color: #4f4f51;
 }
 
 h1,
@@ -90,18 +107,45 @@ img:hover {
   font-style: italic;
 }
 
+
+.page-header {
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 7vh;
+}
+
+.page-heading {
+  color: #4f4f51;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 8vh;
+  letter-spacing: 0.5px;
+}
+
+.page-subheading {
+  color: #4f4f51;
+  opacity: 0.8;
+}
+
+
 /* =========NAVBAR========== */
 
 .navbar-brand img {
   height: 2.7rem;
 }
 
-.navbar-dark .navbar-nav .nav-item .nav-link {
-  transition-duration: 0.3s;
+.navbar {
+  border-bottom: 1px solid rgb(73, 73, 73);
+  box-shadow: 1px 1px 5px  grey;
+  z-index: 999999;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
+.navbar-light .navbar-nav .nav-link {
+  color:  #4f4f51;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #c42329;
 }
 
 @media only screen and (min-width: 768px) {
@@ -148,7 +192,7 @@ img:hover {
 }
 
 #contact-btn {
-  background-color: #c42328c3;
+  background-color: #c42328;
   padding: 10px 20px;
   margin-top: 12px;
   color: #fff;
@@ -158,45 +202,12 @@ img:hover {
 }
 
 #contact-btn:hover {
-  background-color: #c423284c;
+  background-color: #4f4f51;
 }
-
-
 
 /* Hero */
-#hero {
-  height: 65vh;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(to right top, #ad1417, #840e20, #59101f, #300f17, #000000);
-}
-
-#hero h1 {
-  color: white;
-  font-weight: 700;
-  font-size: 10vh;
-}
-
-#hero h3 {
-  color: rgba(255, 255, 255, 0.764);
-}
-
-#hero button {
-  padding: 15px 30px;
-  margin-top: 12px;
-  background-color: #000;
-  color: #fff;
-  border: 0;
-  border-radius: 20px;
-  transition-duration: 0.5s;
-}
-
-#hero button:hover {
-  background-color: rgba(255, 255, 255, 0.722);
-  color: #000;
+#hero img:hover {
+  transform: none;
 }
 
 /* Portfolio */
@@ -265,13 +276,13 @@ img:hover {
 
 /* Testimonials */
 #testimonials {
-  background-image: linear-gradient(to right top, #ad1417, #840e20, #59101f, #300f17, #000000);
-  padding: 10vh 0;
+  padding-top: 10vh;
+  background-color: #f1f1f1;
+  margin-top: 10vh;
 }
 
 #testimonials .section-header {
-  border-left: 5px solid #9c9c9c
-  ;
+  border-left: 5px solid #4f4f51;
 }
 
 .callout-text {
@@ -303,7 +314,7 @@ img:hover {
  }
 }
 .testimonial-carousel .icon-container span.lnr {
-  color: #dadada;
+  color: #c42329;
   font-size: 1.6em;
   cursor: pointer;
   transition: color 0.3s linear;
@@ -314,7 +325,7 @@ img:hover {
  }
 }
 .testimonial-carousel .icon-container span.lnr:hover {
-  color: #fff;
+  color: #020202;
 }
 .testimonial-carousel p {
   font-size: 1em;
@@ -328,7 +339,7 @@ img:hover {
   position: relative;
   flex: 1;
   overflow: hidden;
-  color: #9c9c9c;
+  color: #4f4f51;
   margin: 0 4vw;
 }
 .testimonial-item {
@@ -355,7 +366,7 @@ img:hover {
 }
 
 
-#testimonials video {
+#video video {
   -webkit-box-shadow: 0 0 35px 0 #000;
   box-shadow: 0 0 35px 0 #000;
   margin: 0 auto;
@@ -493,4 +504,56 @@ img:hover {
   opacity:0.3;
   font-size:13px;
   margin-bottom:0;
+}
+
+/* ==========CONTACT PAGE=========== */
+
+#contact-page {
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 7vh;
+}
+
+/* ==========SERVICES PAGE=========== */
+#services {
+  padding: 12vh 0 ;
+}
+
+#services .row {
+  padding-bottom : 15vh;
+}
+
+.services-heading-right {
+  font-weight: 700;
+  font-size: 5vh;
+  padding-left: 10vh;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.services-text-right {
+  font-size: 3vh;
+  padding-left : 10vh;
+  text-align: justify;
+}
+
+
+.services-heading-left {
+  font-weight: 700;
+  font-size: 5vh;
+  padding-right: 10vh;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: right;
+}
+
+.services-text-left {
+  font-size: 3vh;
+  padding-right : 10vh;
+  text-align: justify;
+}
+
+.services-heading-left:hover , .services-heading-right:hover{
+  color: #c42329;
+  transform: scale(1.05);
 }
