@@ -91,20 +91,22 @@ img:hover {
   display: block;
 }
 
-.section-header {
+/* .section-header {
   border-left: 5px solid #4f4f51;
   margin-left: 5vw;
   padding-left: 2vw;
-}
+} */
 
 .s-header {
   font-weight: 700;
   font-size: 6vh;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .s-sub {
   font-style: italic;
+  text-align: center;
 }
 
 .page-header {
@@ -192,7 +194,6 @@ img:hover {
 #contact-btn {
   background-color: #c42328;
   padding: 10px 20px;
-  margin-top: 12px;
   color: #fff;
   border: 0;
   border-radius: 20px;

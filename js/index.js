@@ -46,7 +46,7 @@ AOS.init({ duration: 1000 });
   function slider() {
     switch (carouselCount) {
       case -100:
-        carouselCount = 0;  
+        carouselCount = 0;
         break;
       case 300:
         carouselCount = 0;
@@ -72,53 +72,56 @@ AOS.init({ duration: 1000 });
   scrollInterval = setInterval(autoScroll, interval);
 })();
 
-
 // SLick
 $(document).ready(function () {
   $(".customer-logos-1").slick({
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 0,
     arrows: false,
+    speed: 5000,
     dots: false,
     pauseOnHover: false,
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 4
-        }
+          slidesToShow: 4,
+        },
       },
       {
         breakpoint: 520,
         settings: {
-          slidesToShow: 3
-        }
-      }
-    ]
+          slidesToShow: 3,
+        },
+      },
+    ],
   });
   $(".customer-logos-2").slick({
     slidesToShow: 6,
     slidesToScroll: -1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 0,
     arrows: false,
     dots: false,
+    cssEase: 'linear',
+    speed : 5000,
     pauseOnHover: false,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 4
-        }
+          slidesToShow: 4,
+        },
       },
       {
         breakpoint: 520,
         settings: {
-          slidesToShow: 3
-        }
-      }
-    ]
+          slidesToShow: 3,
+        },
+      },
+    ],
   });
 });
