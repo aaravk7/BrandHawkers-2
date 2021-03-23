@@ -252,6 +252,11 @@ img:hover {
   margin-top: 5vh;
   text-decoration: none;
   border-radius: 25px;
+  transition-duration: 0.5s;
+}
+
+.hero-text a:hover {
+  background-color: #373737;
 }
 
 /* Portfolio */
@@ -268,6 +273,13 @@ img:hover {
   text-align: center;
   padding: 0 10px;
 }
+
+.plus {
+  color: #4f4f51;
+    font-size: 28px;
+    font-weight: 700;
+}
+
 .counter .counter-icon {
   color: #fff;
   background: linear-gradient(to right, #c42329 50%, #4f4f51 50%);
@@ -277,12 +289,18 @@ img:hover {
   width: 120px;
   margin: 0 auto 5px;
   clip-path: polygon(0 0, 50% 12%, 100% 0, 50% 100%);
+  transition-duration: 0.5s;
 }
+
+.counter .counter-icon:hover {
+  transform: scale(1.2);
+}
+
 .counter .counter-value {
   color: #4f4f51;
   font-size: 28px;
   font-weight: 700;
-  display: block;
+  display: inline-block;
 }
 .counter h3 {
   color: #4f4f51;
@@ -305,15 +323,7 @@ img:hover {
   color: white;
 }
 
-#partners .section-header {
-  border-left: 5px solid #ffffff;
-}
-
-.customer-logos-1 {
-  margin-top: 10vh;
-}
-
-.customer-logos-2 {
+.customer-logos {
   margin-top: 10vh;
 }
 
@@ -416,15 +426,26 @@ img:hover {
   display: none;
 }
 
+/* Top Clients */
+#top-clients {
+  padding: 10vh 0;
+  margin-top: 10vh;
+  background-color: #373737;
+  color: white;
+}
+
+.client-row {
+  padding: 10vh 0;;
+}
+
+.client {
+  padding: 0 3.5rem;
+}
+
 /* Testimonials */
 #testimonials {
   padding-top: 10vh;
   background-color: #f1f1f1;
-  margin-top: 10vh;
-}
-
-#testimonials .section-header {
-  border-left: 5px solid #4f4f51;
 }
 
 .callout-text {
@@ -461,6 +482,7 @@ img:hover {
   cursor: pointer;
   transition: color 0.3s linear;
 }
+
 @media (min-width: 768px) {
   .testimonial-carousel .icon-container span.lnr {
     font-size: 2.6em;
@@ -699,4 +721,24 @@ select, label{
 .services-heading-right:hover {
   color: #c42329;
   transform: scale(1.05);
+}
+
+
+/* ===============Clients Page========== */
+#our-clients {
+  padding-bottom: 10vh;
+}
+
+#our-clients .section-header {
+  padding-top: 10vh;
+}
+
+#our-clients .section-header .s-header {
+  text-align: left;
+  border-left: 5px solid #4f4f51;
+  padding-left: 15px;
+}
+
+#our-clients .page-header {
+  padding-bottom: 0;
 }

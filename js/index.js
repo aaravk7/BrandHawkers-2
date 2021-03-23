@@ -3,14 +3,21 @@ $(document).ready(function () {
   if (window.location.pathname == "/index.html") {
     $(".counter-value").countUp({
       time: 3000,
+      suffix: '+'
     });
   }
 });
+
+
 
 // Animate on scroll
 AOS.init({ duration: 1000 });
 
 // Testimonials
+
+$(document).ready(function () {
+  if (window.location.pathname == "/index.html") {
+    
 (function () {
   "use strict";
   var slides = document.querySelectorAll(".testimonial-item"),
@@ -71,10 +78,14 @@ AOS.init({ duration: 1000 });
   // set timing of dispatch click events
   scrollInterval = setInterval(autoScroll, interval);
 })();
+  }
+});
+
+
 
 // SLick
 $(document).ready(function () {
-  $(".customer-logos-1").slick({
+  $(".customer-logos").slick({
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
@@ -84,31 +95,6 @@ $(document).ready(function () {
     dots: false,
     pauseOnHover: false,
     cssEase: 'linear',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-    ],
-  });
-  $(".customer-logos-2").slick({
-    slidesToShow: 6,
-    slidesToScroll: -1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    arrows: false,
-    dots: false,
-    cssEase: 'linear',
-    speed : 5000,
-    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 768,
